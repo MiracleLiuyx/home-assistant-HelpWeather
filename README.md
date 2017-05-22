@@ -16,20 +16,20 @@ plugin of HelpWeather for home assistant.
 
 ## 示意图
 ------
-![Donation](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/ALL.png)
-![Donation](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/1.png)
-![Donation](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/2.png)
-![Donation](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/3.png)
-![Donation](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/4.png)
-![Donation](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/5.png)
-![Donation](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/6.png)
-![Donation](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/7.png)
-![Donation](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/8.png)
-![Donation](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/9.png)
-![Donation](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/10.png)
-![Donation](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/11.png)
-![Donation](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/12.png)
-![Donation](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/warning.png)
+![Alt](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/ALL.png)
+![Alt](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/1.png)
+![Alt](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/2.png)
+![Alt](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/3.png)
+![Alt](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/4.png)
+![Alt](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/5.png)
+![Alt](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/6.png)
+![Alt](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/7.png)
+![Alt](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/8.png)
+![Alt](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/9.png)
+![Alt](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/10.png)
+![Alt](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/11.png)
+![Alt](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/12.png)
+![Alt](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/warning.png)
 
 
 ## 城市编号、名称获取方法
