@@ -1,0 +1,368 @@
+- platform: HelpWeather
+  interval: 300
+  isShowWeatherPic: True
+  city: beijing
+  cityid: 101010100
+  cityname: '北京'
+  monitored_conditions:
+    # 空气质量指数
+    aqi:
+      # 空气质量指数
+      - aqi
+      # 一氧化碳
+      - co
+      # 二氧化氮
+      - no2
+      # 臭氧1小时
+      - 031h
+      # 臭氧8小时
+      - 038h
+      # PM10
+      - pm10
+      # PM2.5
+      - pm25
+      # 二氧化硫
+      - so2
+      # 空气等级
+      - level
+      # 数据更新时间
+      - update
+    # 当天预报
+    ToDay_forecast:
+      # 数据更新时间
+      - date
+      # 最高温度
+      - temphigh
+      # 风力等级
+      - windforce
+      # 最低温度
+      - templow
+      # 风向
+      - wind
+      # 天气情况
+      - weather
+    # 明天预报
+    Tomorrow_forecast:
+      # 数据更新时间
+      - date
+      # 最高温度
+      - temphigh
+      # 风力等级
+      - windforce
+      # 最低温度
+      - templow
+      # 风向
+      - wind
+      # 天气情况
+      - weather
+    # 后天预报
+    OfterTomorrow_forecast:
+      # 数据更新时间
+      - date
+      # 最高温度
+      - temphigh
+      # 风力等级
+      - windforce
+      # 最低温度
+      - templow
+      # 风向
+      - wind
+      # 天气情况
+      - weather
+    # 1小时预报
+    1Hour_forecast:
+      # 预报时间 
+      - time
+      # 天气情况
+      - weather
+      # 温度
+      - temp
+    # 3小时预报
+    3Hour_forecast:
+      # 预报时间 
+      - time
+      # 天气情况
+      - weather
+      # 温度
+      - temp
+    # 6小时预报
+    6Hour_forecast:
+      # 预报时间 
+      - time
+      # 天气情况
+      - weather
+      # 温度
+      - temp
+    # 9小时预报
+    9Hour_forecast:
+      # 预报时间 
+      - time
+      # 天气情况
+      - weather
+      # 温度
+      - temp
+    # 12小时预报
+    12Hour_forecast:
+      # 预报时间 
+      - time
+      # 天气情况
+      - weather
+      # 温度
+      - temp
+    # 15小时预报
+    15Hour_forecast:
+      # 预报时间 
+      - time
+      # 天气情况
+      - weather
+      # 温度
+      - temp
+    # 18小时预报
+    18Hour_forecast:
+      # 预报时间 
+      - time
+      # 天气情况
+      - weather
+      # 温度
+      - temp
+    # 21小时预报
+    21Hour_forecast:
+      # 预报时间 
+      - time
+      # 天气情况
+      - weather
+      # 温度
+      - temp
+    # 21小时预报
+    24Hour_forecast:
+      # 预报时间 
+      - time
+      # 天气情况
+      - weather
+      # 温度
+      - temp
+    # 21小时预报
+    27Hour_forecast:
+      # 预报时间 
+      - time
+      # 天气情况
+      - weather
+      # 温度
+      - temp
+    # 21小时预报
+    30Hour_forecast:
+      # 预报时间 
+      - time
+      # 天气情况
+      - weather
+      # 温度
+      - temp
+    # 21小时预报
+    33Hour_forecast:
+      # 预报时间 
+      - time
+      # 天气情况
+      - weather
+      # 温度
+      - temp
+    # 即时预报
+    now:
+      # 实时温度
+      - temp
+      # 华氏温度
+      - tempf
+      # 风向
+      - wd
+      # 风向英文
+      - wden
+      # 风力
+      - wdforce
+      # 风速
+      - wdspd
+      # 更新时间
+      - uptime
+      # 天气状况
+      - weather
+      # 天气状况英文
+      - weatheren
+      # 天气状况图标
+      - weatherimg
+      # 气压
+      - stp
+      # 能见度
+      - wisib
+      # 湿度
+      - humidity
+      # 降雨
+      - prcp
+      # 24小时降雨量
+      - prcp24h
+      # AQI
+      - aqi
+      # PM2.5
+      - pm25
+      # 今天日期
+      - today
+    suggestion:
+      # 空气污染指数
+      zs_kqwr:
+        - name
+        - level
+        - type
+        - info
+      # 感冒指数
+      zs_gm:
+        - name
+        - level
+        - type
+        - info
+      # 穿衣指数
+      zs_cy:
+        - name
+        - level
+        - type
+        - info
+      # 空调开启指数
+      zs_kt:
+        - name
+        - level
+        - type
+        - info
+      # 雨伞指数
+      zs_ys:
+        - name
+        - level
+        - type
+        - info
+      # 中暑指数
+      zs_zs:
+        - name
+        - level
+        - type
+        - info
+      # 化妆指数
+      zs_hz:
+        - name
+        - level
+        - type
+        - info
+      # 运动指数
+      zs_yd:
+        - name
+        - level
+        - type
+        - info
+      # 美发指数
+      zs_mf:
+        - name
+        - level
+        - type
+        - info
+      # 交通指数
+      zs_jt:
+        - name
+        - level
+        - type
+        - info
+      # 防晒指数
+      zs_fs:
+        - name
+        - level
+        - type
+        - info
+      # 洗车指数
+      zs_xc:
+        - name
+        - level
+        - type
+        - info
+      # 逛街指数
+      zs_gj:
+        - name
+        - level
+        - type
+        - info
+      # 钓鱼指数
+      zs_dy:
+        - name
+        - level
+        - type
+        - info
+      # 夜生活指数
+      zs_ysh:
+        - name
+        - level
+        - type
+        - info
+      # 划船指数
+      zs_hc:
+        - name
+        - level
+        - type
+        - info
+      # 约会指数
+      zs_yh:
+        - name
+        - level
+        - type
+        - info
+      # 放风筝指数
+      zs_ffz:
+        - name
+        - level
+        - type
+        - info
+      # 晨练指数
+      zs_cl:
+        - name
+        - level
+        - type
+        - info
+      # 风寒指数
+      zs_fh:
+        - name
+        - level
+        - type
+        - info
+      # 路况指数
+      zs_lk:
+        - name
+        - level
+        - type
+        - info
+      # 旅游指数
+      zs_ly:
+        - name
+        - level
+        - type
+        - info
+      # 晾晒指数
+      zs_ls:
+        - name
+        - level
+        - type
+        - info
+      # 啤酒指数
+      zs_pj:
+        - name
+        - level
+        - type
+        - info
+      # 舒适度指数
+      zs_ssd:
+        - name
+        - level
+        - type
+        - info
+      # 心情指数
+      zs_xq:
+        - name
+        - level
+        - type
+        - info
+      # 紫外线指数
+      zs_zwx:
+        - name
+        - level
+        - type
+        - info

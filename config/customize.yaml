@@ -1,0 +1,760 @@
+sensor.helpweather_now_aqi:
+  friendly_name: 当前空气质量指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_now_humidity:
+  friendly_name: 当前湿度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_now_pm25:
+  friendly_name: 当前PM2.5浓度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_now_prcp:
+  friendly_name: 当前降雨量
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_now_prcp24h:
+  friendly_name: 未来24小时降雨量
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_now_stp:
+  friendly_name: 当前气压
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_now_temp:
+  friendly_name: 当前温度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_now_tempf:
+  friendly_name: 当前华氏温度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_now_today:
+  friendly_name: 今天日期
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_now_uptime:
+  friendly_name: 当前天气数据更新时间
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_now_wd:
+  friendly_name: 当前风向
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_now_wden:
+  friendly_name: 当前风向英文
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_now_wdforce:
+  friendly_name: 当前风力等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_now_wdspd:
+  friendly_name: 当前风速
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_now_weather:
+  friendly_name: 当前天气状况
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_now_weatheren:
+  friendly_name: 当前天气状况英文
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_now_weatherimg:
+  friendly_name: 当前天气图标
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_now_wisib:
+  friendly_name: 当前能见度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_aqi:
+  friendly_name: 空气质量指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_aqi_co:
+  friendly_name: 一氧化碳浓度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_aqi_level:
+  friendly_name: 空气质量等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_aqi_no2:
+  friendly_name: 二氧化碳浓度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_aqi_o31h:
+  friendly_name: 一小时内臭氧浓度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_aqi_o38h:
+  friendly_name: 八小时内臭氧浓度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_aqi_pm10:
+  friendly_name: PM10颗粒物浓度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_aqi_pm25:
+  friendly_name: PM2.5颗粒物浓度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_aqi_so2:
+  friendly_name: 二氧化硫浓度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_aqi_update:
+  friendly_name: 空气质量更新时间
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_1hour_temp:
+  friendly_name: 1小时后温度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_1hour_time:
+  friendly_name: 1小时后天气更新时间
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_1hour_weather:
+  friendly_name: 1小时后天气状况
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_3hour_temp:
+  friendly_name: 3小时后温度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_3hour_time:
+  friendly_name: 3小时后天气更新时间
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_3hour_weather:
+  friendly_name: 3小时后天气状况
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_6hour_temp:
+  friendly_name: 6小时后温度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_6hour_time:
+  friendly_name: 6小时后天气更新时间
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_6hour_weather:
+  friendly_name: 6小时后天气状况
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_9hour_temp:
+  friendly_name: 9小时后温度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_9hour_time:
+  friendly_name: 9小时后天气更新时间
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_9hour_weather:
+  friendly_name: 9小时后天气状况
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_12hour_temp:
+  friendly_name: 12小时后温度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_12hour_time:
+  friendly_name: 12小时后天气更新时间
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_12hour_weather:
+  friendly_name: 12小时后天气状况
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_15hour_temp:
+  friendly_name: 15小时后温度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_15hour_time:
+  friendly_name: 15小时后天气更新时间
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_15hour_weather:
+  friendly_name: 15小时后天气状况
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_18hour_temp:
+  friendly_name: 18小时后温度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_18hour_time:
+  friendly_name: 18小时后天气更新时间
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_18hour_weather:
+  friendly_name: 18小时后天气状况
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_21hour_temp:
+  friendly_name: 21小时后温度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_21hour_time:
+  friendly_name: 21小时后天气更新时间
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_21hour_weather:
+  friendly_name: 21小时后天气状况
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_24hour_temp:
+  friendly_name: 24小时后温度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_24hour_time:
+  friendly_name: 24小时后天气更新时间
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_24hour_weather:
+  friendly_name: 24小时后天气状况
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_27hour_temp:
+  friendly_name: 27小时后温度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_27hour_time:
+  friendly_name: 27小时后天气更新时间
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_27hour_weather:
+  friendly_name: 27小时后天气状况
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_30hour_temp:
+  friendly_name: 30小时后温度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_30hour_time:
+  friendly_name: 30小时后天气更新时间
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_30hour_weather:
+  friendly_name: 30小时后天气状况
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_33hour_temp:
+  friendly_name: 33小时后温度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_33hour_time:
+  friendly_name: 33小时后天气更新时间
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_33hour_weather:
+  friendly_name: 33小时后天气状况
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_today_date:
+  friendly_name: 今天日期
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_today_temphigh:
+  friendly_name: 今天最高温度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_today_templow:
+  friendly_name: 今天最低温度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_today_weather:
+  friendly_name: 今天天气状况
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_today_wind:
+  friendly_name: 今天风向
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_today_windforce:
+  friendly_name: 今天风力等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_tomorrowday_date:
+  friendly_name: 明天日期
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_tomorrowday_temphigh:
+  friendly_name: 明天最高温度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_tomorrowday_templow:
+  friendly_name: 明天最低温度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_tomorrowday_weather:
+  friendly_name: 明天天气状况
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_tomorrowday_wind:
+  friendly_name: 明天风向
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_tomorrowday_windforce:
+  friendly_name: 明天风力等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_oftertomorrowday_date:
+  friendly_name: 后天日期
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_oftertomorrowday_temphigh:
+  friendly_name: 后天最高温度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_oftertomorrowday_templow:
+  friendly_name: 后天最低温度
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_oftertomorrowday_weather:
+  friendly_name: 后天天气状况
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_oftertomorrowday_wind:
+  friendly_name: 后天风向
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_oftertomorrowday_windforce:
+  friendly_name: 后天风力等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_cl_suggestion_info:
+  friendly_name: 晨练建议
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_cl_suggestion_level:
+  friendly_name: 晨练指数等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_cl_suggestion_name:
+  friendly_name: 晨练指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_cl_suggestion_type:
+  friendly_name: 晨练类型
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_cy_suggestion_info:
+  friendly_name: 穿衣建议
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_cy_suggestion_level:
+  friendly_name: 穿衣指数等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_cy_suggestion_name:
+  friendly_name: 穿衣指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_cy_suggestion_type:
+  friendly_name: 穿衣类型
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_dy_suggestion_info:
+  friendly_name: 钓鱼建议
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_dy_suggestion_level:
+  friendly_name: 钓鱼指数等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_dy_suggestion_name:
+  friendly_name: 钓鱼指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_dy_suggestion_type:
+  friendly_name: 钓鱼类型
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_ffz_suggestion_info:
+  friendly_name: 放风筝建议
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_ffz_suggestion_level:
+  friendly_name: 放风筝指数等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_ffz_suggestion_name:
+  friendly_name: 放风筝指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_ffz_suggestion_type:
+  friendly_name: 放风筝类型
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_fh_suggestion_info:
+  friendly_name: 风寒建议
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_fh_suggestion_level:
+  friendly_name: 风寒指数等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_fh_suggestion_name:
+  friendly_name: 风寒指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_fh_suggestion_type:
+  friendly_name: 风寒类型
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_fs_suggestion_info:
+  friendly_name: 防晒建议
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_fs_suggestion_level:
+  friendly_name: 防晒指数等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_fs_suggestion_name:
+  friendly_name: 防晒指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_fs_suggestion_type:
+  friendly_name: 防晒类型
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_gj_suggestion_info:
+  friendly_name: 逛街建议
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_gj_suggestion_level:
+  friendly_name: 逛街指数等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_gj_suggestion_name:
+  friendly_name: 逛街指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_gj_suggestion_type:
+  friendly_name: 逛街类型
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_gm_suggestion_info:
+  friendly_name: 感冒建议
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_gm_suggestion_level:
+  friendly_name: 感冒指数等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_gm_suggestion_name:
+  friendly_name: 感冒指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_gm_suggestion_type:
+  friendly_name: 感冒类型
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_hc_suggestion_info:
+  friendly_name: 划船建议
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_hc_suggestion_level:
+  friendly_name: 划船指数等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_hc_suggestion_name:
+  friendly_name: 划船指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_hc_suggestion_type:
+  friendly_name: 划船类型
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_hz_suggestion_info:
+  friendly_name: 化妆建议
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_hz_suggestion_level:
+  friendly_name: 化妆指数等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_hz_suggestion_name:
+  friendly_name: 化妆指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_hz_suggestion_type:
+  friendly_name: 化妆类型
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_jt_suggestion_info:
+  friendly_name: 交通建议
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_jt_suggestion_level:
+  friendly_name: 交通指数等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_jt_suggestion_name:
+  friendly_name: 交通指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_jt_suggestion_type:
+  friendly_name: 交通类型
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_kqwr_suggestion_info:
+  friendly_name: 空气污染建议
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_kqwr_suggestion_level:
+  friendly_name: 空气污染指数等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_kqwr_suggestion_name:
+  friendly_name: 空气污染指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_kqwr_suggestion_type:
+  friendly_name: 空气污染类型
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_kt_suggestion_info:
+  friendly_name: 空调开启建议
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_kt_suggestion_level:
+  friendly_name: 空调开启指数等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_kt_suggestion_name:
+  friendly_name: 空调开启指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_kt_suggestion_type:
+  friendly_name: 空调开启类型
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_lk_suggestion_info:
+  friendly_name: 路况建议
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_lk_suggestion_level:
+  friendly_name: 路况指数等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_lk_suggestion_name:
+  friendly_name: 路况指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_lk_suggestion_type:
+  friendly_name: 路况类型
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_ls_suggestion_info:
+  friendly_name: 晾晒建议
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_ls_suggestion_level:
+  friendly_name: 晾晒指数等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_ls_suggestion_name:
+  friendly_name: 晾晒指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_ls_suggestion_type:
+  friendly_name: 晾晒类型
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_ly_suggestion_info:
+  friendly_name: 旅游建议
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_ly_suggestion_level:
+  friendly_name: 旅游指数等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_ly_suggestion_name:
+  friendly_name: 旅游指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_ly_suggestion_type:
+  friendly_name: 旅游类型
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_mf_suggestion_info:
+  friendly_name: 美发建议
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_mf_suggestion_level:
+  friendly_name: 美发指数等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_mf_suggestion_name:
+  friendly_name: 美发指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_mf_suggestion_type:
+  friendly_name: 美发类型
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_pj_suggestion_info:
+  friendly_name: 啤酒建议
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_pj_suggestion_level:
+  friendly_name: 啤酒指数等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_pj_suggestion_name:
+  friendly_name: 啤酒指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_pj_suggestion_type:
+  friendly_name: 啤酒类型
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_ssd_suggestion_info:
+  friendly_name: 舒适度建议
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_ssd_suggestion_level:
+  friendly_name: 舒适度指数等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_ssd_suggestion_name:
+  friendly_name: 舒适度指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_ssd_suggestion_type:
+  friendly_name: 舒适度类型
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_xc_suggestion_info:
+  friendly_name: 洗车建议
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_xc_suggestion_level:
+  friendly_name: 洗车指数等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_xc_suggestion_name:
+  friendly_name: 洗车指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_xc_suggestion_type:
+  friendly_name: 洗车类型
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_xq_suggestion_info:
+  friendly_name: 心情建议
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_xq_suggestion_level:
+  friendly_name: 心情指数等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_xq_suggestion_name:
+  friendly_name: 心情指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_xq_suggestion_type:
+  friendly_name: 心情类型
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_yd_suggestion_info:
+  friendly_name: 运动建议
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_yd_suggestion_level:
+  friendly_name: 运动指数等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_yd_suggestion_name:
+  friendly_name: 运动指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_yd_suggestion_type:
+  friendly_name: 运动类型
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_yh_suggestion_info:
+  friendly_name: 约会建议
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_yh_suggestion_level:
+  friendly_name: 约会指数等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_yh_suggestion_name:
+  friendly_name: 约会指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_yh_suggestion_type:
+  friendly_name: 约会类型
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_ys_suggestion_info:
+  friendly_name: 雨伞建议
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_ys_suggestion_level:
+  friendly_name: 雨伞指数等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_ys_suggestion_name:
+  friendly_name: 雨伞指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_ys_suggestion_type:
+  friendly_name: 雨伞类型
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_ysh_suggestion_info:
+  friendly_name: 夜生活建议
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_ysh_suggestion_level:
+  friendly_name: 夜生活指数等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_ysh_suggestion_name:
+  friendly_name: 夜生活指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_ysh_suggestion_type:
+  friendly_name: 夜生活类型
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_zs_suggestion_info:
+  friendly_name: 中暑建议
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_zs_suggestion_level:
+  friendly_name: 中暑指数等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_zs_suggestion_name:
+  friendly_name: 中暑指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_zs_suggestion_type:
+  friendly_name: 中暑类型
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_zwx_suggestion_info:
+  friendly_name: 紫外线建议
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_zwx_suggestion_level:
+  friendly_name: 紫外线指数等级
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_zwx_suggestion_name:
+  friendly_name: 紫外线指数
+  #icon:
+  homebridge_hidden: true
+sensor.helpweather_zs_zwx_suggestion_type:
+  friendly_name: 紫外线类型
+  #icon:
+  homebridge_hidden: true
