@@ -14,6 +14,19 @@ plugin of HelpWeather for home assistant.
 配置文件中需要配置，city、cityid、cityname，其它参数可选，配置文件可参见config目录内容。
 
 
+## 城市编号、名称获取方法
+------
+首先登陆 http://www.help.bj.cn 网站，点击切换城市，选择你所在城市或区，如下图： <br>
+![Donation](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/changecity.png)
+
+选择好城市或区后，到地址栏查看，如下图： <br>
+![Donation](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/getid.png) <br>
+例如：http://www.help.bj.cn/weather/beijing/BJ010100/index.htm <br>
+city获取方法：weather后的就是city需要填写的内容； <br>
+cityid获取方法：city后面BJ010100，将数字 010100 提取出来，在最前面加上 101，即为你的cityid； <br>
+cityname获取方法：第一步，你选择城市或区时，拷贝这个汉字即可，这里就是“北京” <br>
+
+
 ## 示意图
 ------
 ![Alt](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/ALL.png)
@@ -32,15 +45,4 @@ plugin of HelpWeather for home assistant.
 ![Alt](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/warning.png)
 
 
-## 城市编号、名称获取方法
-------
-首先登陆 http://www.help.bj.cn 网站，点击切换城市，选择你所在城市或区，如下图：
-![Donation](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/changecity.png)
-
-选择好城市或区后，到地址栏查看，如下图：
-![Donation](https://raw.githubusercontent.com/MiracleLiuyx/home-assistant-HelpWeather/master/images/getid.png)
-例如：http://www.help.bj.cn/weather/beijing/BJ010100/index.htm <br>
-city获取方法：weather后的就是city需要填写的内容； <br>
-cityid获取方法：city后面BJ010100，将数字 010100 提取出来，在最前面加上 101，即为你的cityid； <br>
-cityname获取方法：第一步，你选择城市或区时，拷贝这个汉字即可，这里就是“北京” <br>
 
