@@ -1,7 +1,7 @@
 # homeassistant-HelpWeather
 plugin of HelpWeather for home assistant.
 
-##说明
+## 说明
 ------
 文件基于 charleyzhu 的 https://github.com/charleyzhu/HomeAssistant_Components/blob/master/sensor/HeWeather.py 插件文件修改。<br>
 调用帮天气免费接口，无需注册，仅需要确认，城市名称和编号即可。具体规则如下：<br>
