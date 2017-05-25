@@ -133,7 +133,7 @@
       - weather
       # 温度
       - temp
-    # 21小时预报
+    # 24小时预报
     24Hour_forecast:
       # 预报时间 
       - time
@@ -141,7 +141,7 @@
       - weather
       # 温度
       - temp
-    # 21小时预报
+    # 27小时预报
     27Hour_forecast:
       # 预报时间 
       - time
@@ -149,16 +149,8 @@
       - weather
       # 温度
       - temp
-    # 21小时预报
+    # 30小时预报
     30Hour_forecast:
-      # 预报时间 
-      - time
-      # 天气情况
-      - weather
-      # 温度
-      - temp
-    # 21小时预报
-    33Hour_forecast:
       # 预报时间 
       - time
       # 天气情况

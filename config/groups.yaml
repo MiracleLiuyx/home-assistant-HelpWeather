@@ -62,9 +62,6 @@ Help Weather:
     - sensor.helpweather_30hour_temp
     - sensor.helpweather_30hour_time
     - sensor.helpweather_30hour_weather
-    - sensor.helpweather_33hour_temp
-    - sensor.helpweather_33hour_time
-    - sensor.helpweather_33hour_weather
     - sensor.helpweather_today_date
     - sensor.helpweather_today_temphigh
     - sensor.helpweather_today_templow

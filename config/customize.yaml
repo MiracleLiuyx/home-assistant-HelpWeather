@@ -242,18 +242,6 @@ sensor.helpweather_30hour_weather:
   friendly_name: 30小时后天气状况
   #icon:
   homebridge_hidden: true
-sensor.helpweather_33hour_temp:
-  friendly_name: 33小时后温度
-  #icon:
-  homebridge_hidden: true
-sensor.helpweather_33hour_time:
-  friendly_name: 33小时后天气更新时间
-  #icon:
-  homebridge_hidden: true
-sensor.helpweather_33hour_weather:
-  friendly_name: 33小时后天气状况
-  #icon:
-  homebridge_hidden: true
 sensor.helpweather_today_date:
   friendly_name: 今天日期
   #icon:

@@ -26,7 +26,6 @@ CONF_21HOUR_FORECAST = '21Hour_forecast'
 CONF_24HOUR_FORECAST = '24Hour_forecast'
 CONF_27HOUR_FORECAST = '27Hour_forecast'
 CONF_30HOUR_FORECAST = '30Hour_forecast'
-CONF_33HOUR_FORECAST = '33Hour_forecast'
 CONF_NOW = 'now'
 CONF_SUGGESTION = 'suggestion'
 CONF_UPDATE_INTERVAL = 'interval'
@@ -39,15 +38,15 @@ CONF_ISDEBUG = 'isDebug'
 #http://api.help.bj.cn/apis/aqi3/?id=beijing
 AQI_TYPES = {
     'aqi': ['AQI', 'AQI'],
-    "co": ['AQI_CO', 'mg/m³'],
-    "no2": ['AQI_NO2', 'μg/m³'],
-    "031h": ['AQI_O31h', 'μg/m³'],
-    "038h": ['AQI_O38h', 'μg/m³'],
-    "pm10": ['AQI_PM10', 'μg/m³'],
-    "pm25": ['AQI_PM25', 'μg/m³'],
-    "so2": ['AQI_SO2', 'μg/m³'],
-    "level": ['AQI_LEVEL', None],
-    "update": ['AQI_UPDATE', None],
+    'co': ['AQI_CO', 'mg/m³'],
+    'no2': ['AQI_NO2', 'μg/m³'],
+    '031h': ['AQI_O31h', 'μg/m³'],
+    '038h': ['AQI_O38h', 'μg/m³'],
+    'pm10': ['AQI_PM10', 'μg/m³'],
+    'pm25': ['AQI_PM25', 'μg/m³'],
+    'so2': ['AQI_SO2', 'μg/m³'],
+    'level': ['AQI_LEVEL', None],
+    'update': ['AQI_UPDATE', None],
 }
 
 #http://api.help.bj.cn/apis/weather6d/?id=101010100
@@ -70,7 +69,7 @@ HOUR_FORECAST_TYPE = {
 #http://api.help.bj.cn/apis/weather/?id=101010100
 NOW_FORECAST_TYPE = {
     'temp': ['Now_TEMP', '°C'],
-    'tempf': ['Now_TEMPF', '°F'],
+    'tempf': ['Now_TEMPF', '℉'],
     'wd': ['Now_WD', None],
     'wden': ['Now_WDEN', None],
     'wdforce': ['Now_WDFORCE', None],
@@ -85,7 +84,7 @@ NOW_FORECAST_TYPE = {
     'prcp': ['Now_PRCP', 'mm'],
     'prcp24h': ['Now_PRCP24H', 'mm'],
     'aqi': ['Now_AQI', 'AQI'],
-    'pm25': ['Now_PM25', 'μg/m³'],
+    'pm25': ['Now_PM25', 'AQI'],
     'today': ['Now_TODAY', None],
 }
 
@@ -180,7 +179,6 @@ MODULE_SCHEMA = vol.Schema({
     vol.Required(CONF_24HOUR_FORECAST,default=None):vol.All(cv.ensure_list, [vol.In(HOUR_FORECAST_TYPE)]),
     vol.Required(CONF_27HOUR_FORECAST,default=None):vol.All(cv.ensure_list, [vol.In(HOUR_FORECAST_TYPE)]),
     vol.Required(CONF_30HOUR_FORECAST,default=None):vol.All(cv.ensure_list, [vol.In(HOUR_FORECAST_TYPE)]),
-    vol.Required(CONF_33HOUR_FORECAST,default=None):vol.All(cv.ensure_list, [vol.In(HOUR_FORECAST_TYPE)]),
     vol.Required(CONF_NOW,default=None):vol.All(cv.ensure_list, [vol.In(NOW_FORECAST_TYPE)]),
     vol.Required(CONF_SUGGESTION,default=None): MODULE_SUGGESTION,
 })
@@ -194,7 +192,7 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
     vol.Optional(CONF_CITYNAME,default=None):cv.string,
     vol.Optional(CONF_ISSHOWWEATHERPIC,default=False):cv.boolean,
     vol.Optional(CONF_ISDEBUG,default=False):cv.boolean,
-    vol.Optional(CONF_UPDATE_INTERVAL, default=timedelta(seconds=120)): (vol.All(cv.time_period, cv.positive_timedelta)),
+    vol.Optional(CONF_UPDATE_INTERVAL, default=timedelta(seconds=600)): (vol.All(cv.time_period, cv.positive_timedelta)),
 
 })
 
@@ -242,7 +240,8 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
             for sensor in aqiSensor:
                 sensor_Name = AQI_TYPES[sensor][0]
                 measurement = AQI_TYPES[sensor][1]
-                dev.append(HelpWeatherSensor(weatherData,CONF_AQI,sensor,sensor_Name,measurement))
+                #dev.append(HelpWeatherSensor(weatherData,CONF_AQI,sensor,sensor_Name,measurement))
+                dev.append(HelpWeatherSensor(weatherData, CONF_AQI, sensor, sensor_Name, isShowWeatherPic, measurement))
 
     if CONF_TODAY_FORECAST in monitored_conditions:
         DaySensor = monitored_conditions[CONF_TODAY_FORECAST]
@@ -413,18 +412,6 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
                 measurement = HOUR_FORECAST_TYPE[sensor][1]
                 dev.append(HelpWeatherSensor(weatherData, CONF_30HOUR_FORECAST, sensor, sensor_Name, isShowWeatherPic, measurement))
 
-    if CONF_33HOUR_FORECAST in monitored_conditions:
-        HourSensor = monitored_conditions[CONF_33HOUR_FORECAST]
-        if isinstance(HourSensor, list):
-            if len(HourSensor) == 0:
-                sensor_Name = HOUR_FORECAST_TYPE['Weather'][0]
-                measurement = HOUR_FORECAST_TYPE['Weather'][1]
-                dev.append(HelpWeatherSensor(weatherData, CONF_33HOUR_FORECAST, 'Weather', sensor_Name, isShowWeatherPic, measurement))
-            for sensor in HourSensor:
-                sensor_Name = HOUR_FORECAST_TYPE[sensor][0]
-                measurement = HOUR_FORECAST_TYPE[sensor][1]
-                dev.append(HelpWeatherSensor(weatherData, CONF_33HOUR_FORECAST, sensor, sensor_Name, isShowWeatherPic, measurement))
-
     if CONF_NOW in monitored_conditions:
         NowSensor = monitored_conditions[CONF_NOW]
         if isinstance(NowSensor, list):
@@ -500,8 +487,6 @@ class HelpWeatherSensor(Entity):
             return 'helpweather_27'+ self._name
         if self._sensor_Type == CONF_30HOUR_FORECAST:
             return 'helpweather_30'+ self._name
-        if self._sensor_Type == CONF_33HOUR_FORECAST:
-            return 'helpweather_33'+ self._name
         if self._sensor_Type == CONF_NOW:
             return 'helpweather_' + self._name
         if self._sensor_Type == CONF_SUGGESTION:
@@ -641,13 +626,6 @@ class HelpWeatherSensor(Entity):
                 return
             if len(data) > 0:
                 HourData = data[0]['weather36h'][10]
-                self._SetHourly_Forecast_Status(HourData)
-        elif self._sensor_Type == CONF_33HOUR_FORECAST:
-            data = self.weatherData.GetDataBySensor_Type('hft')
-            if data == None:
-                return
-            if len(data) > 0:
-                HourData = data[0]['weather36h'][11]
                 self._SetHourly_Forecast_Status(HourData)
         elif self._sensor_Type == CONF_NOW:
             NowData = self.weatherData.GetDataBySensor_Type('nft')
