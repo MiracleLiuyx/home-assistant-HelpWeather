@@ -780,6 +780,14 @@ class HelpWeatherData(object):
             _Log.error('sft http get data Error StatusCode:%s' % resp_sft.status_code)
             return
 
+        self.dataJson = {
+            "at": [],
+            "dft": [],
+            "hft": [],
+            "nft": [],
+            "sft": []
+        }
+
         self.dataJson["at"].append(resp_at.json())
         self.dataJson["dft"].append(resp_dft.json())
         self.dataJson["hft"].append(resp_hft.json())
