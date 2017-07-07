@@ -524,6 +524,8 @@ class HelpWeatherSensor(Entity):
                 return
             if 'city' in data[0]:
                 cityData = data[0]
+                if not data[0]:
+                    return 
                 if self._sensor in cityData:
                     statusData = cityData[self._sensor]
                     self._state = statusData
@@ -532,6 +534,8 @@ class HelpWeatherSensor(Entity):
             data = self.weatherData.GetDataBySensor_Type('dft')
             if data == None:
                 return
+            if not data[0]['data']['forecast']:
+                return
             if len(data) > 0 :
                 dayData = data[0]['data']['forecast'][0]
                 self._SetDay_Forecast_Status(dayData)
@@ -539,12 +543,16 @@ class HelpWeatherSensor(Entity):
             data = self.weatherData.GetDataBySensor_Type('dft')
             if data == None:
                 return
+            if not data[0]['data']['forecast']:
+                return
             if len(data) > 0:
                 dayData = data[0]['data']['forecast'][1]
                 self._SetDay_Forecast_Status(dayData)
         elif self._sensor_Type == CONF_OFTERTOMORROW_FORECAST:
             data = self.weatherData.GetDataBySensor_Type('dft')
             if data == None:
+                return
+            if not data[0]['data']['forecast']:
                 return
             if len(data) > 0:
                 dayData = data[0]['data']['forecast'][2]
@@ -554,12 +562,16 @@ class HelpWeatherSensor(Entity):
             data = self.weatherData.GetDataBySensor_Type('hft')
             if data == None:
                 return
+            if not data[0]['weather36h']:
+                return
             if len(data) > 0:
                 HourData = data[0]['weather36h'][0]
                 self._SetHourly_Forecast_Status(HourData)
         elif self._sensor_Type == CONF_3HOUR_FORECAST:
             data = self.weatherData.GetDataBySensor_Type('hft')
             if data == None:
+                return
+            if not data[0]['weather36h']:
                 return
             if len(data) > 0:
                 HourData = data[0]['weather36h'][1]
@@ -568,12 +580,16 @@ class HelpWeatherSensor(Entity):
             data = self.weatherData.GetDataBySensor_Type('hft')
             if data == None:
                 return
+            if not data[0]['weather36h']:
+                return
             if len(data) > 0:
                 HourData = data[0]['weather36h'][2]
                 self._SetHourly_Forecast_Status(HourData)
         elif self._sensor_Type == CONF_9HOUR_FORECAST:
             data = self.weatherData.GetDataBySensor_Type('hft')
             if data == None:
+                return
+            if not data[0]['weather36h']:
                 return
             if len(data) > 0:
                 HourData = data[0]['weather36h'][3]
@@ -582,12 +598,16 @@ class HelpWeatherSensor(Entity):
             data = self.weatherData.GetDataBySensor_Type('hft')
             if data == None:
                 return
+            if not data[0]['weather36h']:
+                return
             if len(data) > 0:
                 HourData = data[0]['weather36h'][4]
                 self._SetHourly_Forecast_Status(HourData)
         elif self._sensor_Type == CONF_15HOUR_FORECAST:
             data = self.weatherData.GetDataBySensor_Type('hft')
             if data == None:
+                return
+            if not data[0]['weather36h']:
                 return
             if len(data) > 0:
                 HourData = data[0]['weather36h'][5]
@@ -596,12 +616,16 @@ class HelpWeatherSensor(Entity):
             data = self.weatherData.GetDataBySensor_Type('hft')
             if data == None:
                 return
+            if not data[0]['weather36h']:
+                return
             if len(data) > 0:
                 HourData = data[0]['weather36h'][6]
                 self._SetHourly_Forecast_Status(HourData)
         elif self._sensor_Type == CONF_21HOUR_FORECAST:
             data = self.weatherData.GetDataBySensor_Type('hft')
             if data == None:
+                return
+            if not data[0]['weather36h']:
                 return
             if len(data) > 0:
                 HourData = data[0]['weather36h'][7]
@@ -610,12 +634,16 @@ class HelpWeatherSensor(Entity):
             data = self.weatherData.GetDataBySensor_Type('hft')
             if data == None:
                 return
+            if not data[0]['weather36h']:
+                return
             if len(data) > 0:
                 HourData = data[0]['weather36h'][8]
                 self._SetHourly_Forecast_Status(HourData)
         elif self._sensor_Type == CONF_27HOUR_FORECAST:
             data = self.weatherData.GetDataBySensor_Type('hft')
             if data == None:
+                return
+            if not data[0]['weather36h']:
                 return
             if len(data) > 0:
                 HourData = data[0]['weather36h'][9]
@@ -624,12 +652,16 @@ class HelpWeatherSensor(Entity):
             data = self.weatherData.GetDataBySensor_Type('hft')
             if data == None:
                 return
+            if not data[0]['weather36h']:
+                return
             if len(data) > 0:
                 HourData = data[0]['weather36h'][10]
                 self._SetHourly_Forecast_Status(HourData)
         elif self._sensor_Type == CONF_NOW:
             NowData = self.weatherData.GetDataBySensor_Type('nft')
             if NowData == None:
+                return
+            if not NowData[0]:
                 return
             NowData = NowData[0]
             self._SetHourly_Forecast_Status(NowData)
@@ -639,9 +671,9 @@ class HelpWeatherSensor(Entity):
                 return
             if self._suggestionType == None:
                 return
-
+            if not suggestionData[0]['data']:
+                return
             suggestionData = suggestionData[0]['data']
-
             if self._suggestionType in suggestionData:
                 sData = suggestionData[self._suggestionType]
                 if self._sensor in sData:
